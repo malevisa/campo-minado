@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a0dba66-d611-4ff1-ac0c-b13da52d3f75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/view/BotaoCampo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/TelaPrincipal.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Campo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Campo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Tabuleiro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Tabuleiro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/BotaoCampo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/BotaoCampo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MouseClickListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MouseClickListener.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
+  <component name="RunManager">
+    <configuration name="TelaPrincipalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.TelaPrincipalKt" />
+      <module name="campo-minado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.TelaPrincipalKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +73,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/model/Tabuleiro.kt</url>
+          <line>69</line>
+          <properties class="model.Tabuleiro" method="verificarDerrotaOuVitoria">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

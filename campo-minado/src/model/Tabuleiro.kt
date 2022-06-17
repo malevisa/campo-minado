@@ -1,6 +1,6 @@
 package model
 
-import java.util.Random
+import java.util.*
 
 enum class TabuleiroEvento { VITORIA, DERROTA }
 
@@ -47,7 +47,7 @@ class Tabuleiro(val qtdeLinhas: Int, val qtdeColunas: Int, private val qtdeMinas
 
         var linhaSorteada = -1
         var colunaSorteada = -1
-        var qtdeMinasAtual = -1
+        var qtdeMinasAtual = 0
 
         while (qtdeMinasAtual < this.qtdeMinas) {
             linhaSorteada = gerador.nextInt(qtdeLinhas)

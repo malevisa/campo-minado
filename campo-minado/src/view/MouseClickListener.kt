@@ -18,10 +18,7 @@ class MouseClickListener(
     }
 
     override fun mouseClicked(e: MouseEvent?) {}
-
     override fun mouseReleased(e: MouseEvent?) {}
-
     override fun mouseEntered(e: MouseEvent?) {}
-
     override fun mouseExited(e: MouseEvent?) {}
 }

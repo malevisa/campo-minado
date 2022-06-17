@@ -68,8 +68,6 @@ class BotaoCampo(private val campo: Campo) : JButton() {
     private fun aplicarEstiloPadrao() {
         background = COR_BG_NORMAL
         border = BorderFactory.createBevelBorder(0)
-        text = "X"
+        text = ""
     }
-
-
 }

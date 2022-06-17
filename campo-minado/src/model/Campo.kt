@@ -1,17 +1,9 @@
 package model
 
-enum class CampoEvento {
-    ABERTURA,
-    MARCACAO,
-    DESMARCACAO,
-    EXPLOSAO,
-    REINICIALIZACAO
-}
+enum class CampoEvento { ABERTURA, MARCACAO, DESMARCACAO, EXPLOSAO, REINICIALIZACAO }
 
-data class Campo(
-    val linha: Int,
-    val coluna: Int
-) {
+data class Campo(val linha: Int, val coluna: Int) {
+
     private val vizinhos = ArrayList<Campo>()
     private val callbacks = ArrayList<(Campo, CampoEvento) -> Unit>()
 
@@ -39,13 +31,9 @@ data class Campo(
         if (fechado) {
             aberto = true
             if (minado) {
-                callbacks.forEach {
-                    it(this, CampoEvento.EXPLOSAO)
-                }
+                callbacks.forEach { it(this, CampoEvento.EXPLOSAO) }
             } else {
-                callbacks.forEach {
-                    it(this, CampoEvento.ABERTURA)
-                }
+                callbacks.forEach { it(this, CampoEvento.ABERTURA) }
                 vizinhos.filter { it.fechado && it.seguro && vizinhançaSegura }.forEach { it.abrir() }
             }
         }
